@@ -57,28 +57,28 @@ module OwaspZap
         end
 
         def policy
-            Zap::Policy.new(:base=>@base)
+            Policy.new(:base=>@base)
         end
 
         def alerts
-            Zap::Alert.new(:base=>@base,:target=>@target)
+            Alert.new(:base=>@base,:target=>@target)
         end
 
         def scanner
-            Zap::Scanner.new(:base=>@base)
+            Scanner.new(:base=>@base)
         end
 
         #attack
         def ascan
-            Zap::Attack.new(:base=>@base,:target=>@target)
+            Attack.new(:base=>@base,:target=>@target)
         end
 
         def spider
-            Zap::Spider.new(:base=>@base,:target=>@target)
+            Spider.new(:base=>@base,:target=>@target)
         end
 
         def auth
-            Zap::Auth.new(:base=>@base)
+            Auth.new(:base=>@base)
         end
 
         # TODO
